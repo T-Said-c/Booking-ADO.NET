@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1B35D17-8209-460A-8DD5-2A5944083AE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Booking</RootNamespace>
+    <AssemblyName>Booking</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookingProDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookingProDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookingProDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookingProDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookingProDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookingProDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Citymenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Citymenu.Designer.cs">
+      <DependentUpon>Citymenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="commadervoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="commadervoiture.Designer.cs">
+      <DependentUpon>commadervoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="commanderhouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="commanderhouse.Designer.cs">
+      <DependentUpon>commanderhouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="commandertaxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="commandertaxi.Designer.cs">
+      <DependentUpon>commandertaxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="commandhotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="commandhotel.Designer.cs">
+      <DependentUpon>commandhotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listcar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listcar.Designer.cs">
+      <DependentUpon>listcar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listhotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listhotel.Designer.cs">
+      <DependentUpon>listhotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listhouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listhouse.Designer.cs">
+      <DependentUpon>listhouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listtaxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listtaxi.Designer.cs">
+      <DependentUpon>listtaxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuClient.Designer.cs">
+      <DependentUpon>MenuClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuVendor.Designer.cs">
+      <DependentUpon>MenuVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profil.Designer.cs">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfilClient.Designer.cs">
+      <DependentUpon>ProfilClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="signupVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signupVendor.Designer.cs">
+      <DependentUpon>signupVendor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Citymenu.resx">
+      <DependentUpon>Citymenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="commadervoiture.resx">
+      <DependentUpon>commadervoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="commanderhouse.resx">
+      <DependentUpon>commanderhouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="commandertaxi.resx">
+      <DependentUpon>commandertaxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="commandhotel.resx">
+      <DependentUpon>commandhotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listcar.resx">
+      <DependentUpon>listcar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listhotel.resx">
+      <DependentUpon>listhotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listhouse.resx">
+      <DependentUpon>listhouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listtaxi.resx">
+      <DependentUpon>listtaxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuClient.resx">
+      <DependentUpon>MenuClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuVendor.resx">
+      <DependentUpon>MenuVendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profil.resx">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilClient.resx">
+      <DependentUpon>ProfilClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="signupVendor.resx">
+      <DependentUpon>signupVendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BookingProDataSet.xsc">
+      <DependentUpon>BookingProDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookingProDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookingProDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookingProDataSet.xss">
+      <DependentUpon>BookingProDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookingProDataSet1.xsc">
+      <DependentUpon>BookingProDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BookingProDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookingProDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookingProDataSet1.xss">
+      <DependentUpon>BookingProDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BookingProDataSet2.xsc">
+      <DependentUpon>BookingProDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BookingProDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookingProDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookingProDataSet2.xss">
+      <DependentUpon>BookingProDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1184240848-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dzd.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
